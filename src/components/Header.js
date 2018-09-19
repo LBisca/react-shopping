@@ -10,6 +10,11 @@ export default class Header extends Component {
     this.setState({ value: event.target.value });
   };
 
+  showModal = () => {
+    document.getElementById("modal").style.visibility = "visible";
+    document.getElementById("modal").style.opacity = "1";
+  };
+
   render() {
     return (
       <header className="navigation-bar">
@@ -23,7 +28,7 @@ export default class Header extends Component {
             value={this.state.value}
             onChange={this.handleChange}
           />
-          <div className="navigation-bar--cart" />
+          <div className="navigation-bar--cart" onClick={this.showModal} />
         </div>
       </header>
     );

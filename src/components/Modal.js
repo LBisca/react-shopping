@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import "../scss/components/modal.css";
 
 class Modal extends Component {
-  render() {
+  render = props => {
+    const items = this.props.shoppingList.map((item, index) => {
+      return <h4>{item.name}</h4>;
+    });
+
     return (
-      <div className="modal">
-        <td>
-          <tr>hey</tr>
-          <tr>hmm</tr>
-          <tr>hmm</tr>
-        </td>
+      <div className="modal" id="modal">
+        {items}
       </div>
     );
-  }
+  };
 }
 
 export default Modal;

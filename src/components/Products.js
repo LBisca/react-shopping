@@ -6,7 +6,6 @@ import React, { Component } from "react";
 export default class Products extends Component {
   render = props => {
     const { products, handleSubmit } = this.props;
-    console.log(products);
 
     return (
       <div className="products-container">

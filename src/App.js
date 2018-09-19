@@ -23,10 +23,16 @@ class App extends Component {
         price: 25.31
       },
       {
-        name: "hair ointment",
-        type: "cosmetic",
-        url: "hair-oil.png",
-        price: 89.42
+        name: "grey t-shirt",
+        type: "t-shirt",
+        url: "mtsh0007s-gyaa.jpg",
+        price: 25.31
+      },
+      {
+        name: "grey t-shirt",
+        type: "t-shirt",
+        url: "mtsh0007s-gyaa.jpg",
+        price: 25.31
       },
       {
         name: "hair ointment",
@@ -49,7 +55,13 @@ class App extends Component {
       {
         name: "dark jeans",
         type: "pants",
-        url: "mtsh0007s-gyaa.jpg",
+        url: "1488961149.8659.jpg",
+        price: 116.72
+      },
+      {
+        name: "dark jeans",
+        type: "pants",
+        url: "1488961149.8659.jpg",
         price: 116.72
       }
     ];
@@ -58,6 +70,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Products products={products} handleSubmit={this.handleSubmit} />
+        <Modal shoppingList={this.state.shoppingList} />
         <Footer />
       </div>
     );

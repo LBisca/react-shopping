@@ -14,12 +14,14 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+  -webkit-box-shadow: 1px 1px rgba(136, 136, 136, 0.4);
+          box-shadow: 1px 1px rgba(136, 136, 136, 0.4);
 }
 
 .product--image {
   background-position: center;
-  background-color: aliceblue;
   background-size: 100%;
+  background-color: white;
   width: 100%;
   height: 100%;
   max-height: 200px;
@@ -28,6 +30,7 @@
 .product--name {
   color: white;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .product--price {
@@ -39,6 +42,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  cursor: pointer;
   width: 20px;
   height: 20px;
 }
@@ -53,6 +57,12 @@
 
 .product--button--minus {
   background: url("../../media/svg/minus.svg");
+}
+
+.product--button--counter {
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
 
 .product--button--plus {

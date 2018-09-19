@@ -37,6 +37,7 @@
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .navigation-bar--search {
@@ -49,6 +50,7 @@
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .navigation-bar--input {
@@ -69,5 +71,6 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */

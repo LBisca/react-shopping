@@ -5,14 +5,12 @@ import React, { Component } from "react";
 
 export default class Products extends Component {
   render = props => {
-    const { products } = this.props;
+    const { products, handleSubmit } = this.props;
     console.log(products);
 
     return (
       <div className="products-container">
-        <Product productData={products} />
-        <Product productData={products} />
-        <Product productData={products} />
+        <Product productData={products} handleSubmit={handleSubmit} />
       </div>
     );
   };

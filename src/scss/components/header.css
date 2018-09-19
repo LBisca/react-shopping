@@ -1,0 +1,73 @@
+.navigation-bar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 999;
+}
+
+.navigation-bar--contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation-bar--text {
+  color: white;
+}
+
+.navigation-bar--menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: url("../../media/svg/hamburguer.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.navigation-bar--search {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: url("../../media/svg/search.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.navigation-bar--input {
+  height: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.navigation-bar--cart {
+  display: inline-block;
+  background: url("../../media/svg/shopping-cart.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=header.css.map */

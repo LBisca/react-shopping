@@ -1,0 +1,61 @@
+.navigation-bar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 999;
+
+  &--contents {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &--text {
+    color: white;
+  }
+
+  &--menu {
+    align-self: center;
+    background: url("../../media/svg/hamburguer.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  &--search {
+    align-self: center;
+    background: url("../../media/svg/search.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+
+  &--input {
+    height: 30px;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 300px;
+  }
+
+  &--cart {
+    display: inline-block;
+    background: url("../../media/svg/shopping-cart.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+}

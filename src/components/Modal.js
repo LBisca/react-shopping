@@ -19,15 +19,20 @@ class Modal extends Component {
       );
     });
 
+    // const total = this.props.shoppingList.map((item, index) => {
+    //   item.price
+    // })
+
     return (
       <div className="modal" id="modal">
         <table className="modal--contents">
           <tr>
-            <th>item</th>
-            <th>name</th>
-            <th>price</th>
+            <th>Item</th>
+            <th>Name</th>
+            <th>Price</th>
           </tr>
           {items}
+          <tr>Total:</tr>
         </table>
       </div>
     );

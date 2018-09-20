@@ -11,6 +11,11 @@
   transition: 0.5s;
   left: calc(50% - 250px);
   top: calc(50% - 100px);
-  z-index: 10;
+  z-index: 1001;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=modal.css.map */

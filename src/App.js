@@ -69,6 +69,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <div className="shadow" id="shadow" />
         <Products products={products} handleSubmit={this.handleSubmit} />
         <Modal shoppingList={this.state.shoppingList} />
         <Footer />

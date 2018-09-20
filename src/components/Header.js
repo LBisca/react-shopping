@@ -11,8 +11,9 @@ export default class Header extends Component {
   };
 
   showModal = () => {
-    document.getElementById("modal").style.visibility = "visible";
-    document.getElementById("modal").style.opacity = "1";
+    document.getElementById("modal").classList.toggle("modal--visible");
+    document.getElementById("shadow").classList.toggle("on");
+    document.getElementById("shadow").onclick = this.showModal;
   };
 
   render() {

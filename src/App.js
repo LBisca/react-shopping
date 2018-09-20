@@ -7,70 +7,31 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    shoppingList: []
+    shoppingList: [],
+    products: []
   };
+
+  componentDidMount() {
+    fetch("./json.json")
+      .then(result => result.json())
+      .then(result => {
+        this.setState({ products: result });
+      });
+  }
 
   handleSubmit = product => {
     this.setState({ shoppingList: [...this.state.shoppingList, product] });
   };
 
   render() {
-    const products = [
-      {
-        name: "grey t-shirt",
-        type: "t-shirt",
-        url: "mtsh0007s-gyaa.jpg",
-        price: 25.31
-      },
-      {
-        name: "grey t-shirt",
-        type: "t-shirt",
-        url: "mtsh0007s-gyaa.jpg",
-        price: 25.31
-      },
-      {
-        name: "grey t-shirt",
-        type: "t-shirt",
-        url: "mtsh0007s-gyaa.jpg",
-        price: 25.31
-      },
-      {
-        name: "hair ointment",
-        type: "cosmetic",
-        url: "hair-oil.png",
-        price: 89.42
-      },
-      {
-        name: "blue t-shirt",
-        type: "t-shirt",
-        url: "TM71B00PBLE_F_1.jpg",
-        price: 19.99
-      },
-      {
-        name: "blue t-shirt",
-        type: "t-shirt",
-        url: "TM71B00PBLE_F_1.jpg",
-        price: 19.99
-      },
-      {
-        name: "dark jeans",
-        type: "pants",
-        url: "1488961149.8659.jpg",
-        price: 116.72
-      },
-      {
-        name: "dark jeans",
-        type: "pants",
-        url: "1488961149.8659.jpg",
-        price: 116.72
-      }
-    ];
-
     return (
       <div className="App">
         <Header />
         <div className="shadow" id="shadow" />
-        <Products products={products} handleSubmit={this.handleSubmit} />
+        <Products
+          products={this.state.products}
+          handleSubmit={this.handleSubmit}
+        />
         <Modal shoppingList={this.state.shoppingList} />
         <Footer />
       </div>

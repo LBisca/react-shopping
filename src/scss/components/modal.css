@@ -5,17 +5,36 @@
   text-align: center;
   position: fixed;
   border-radius: 3px;
-  width: 500px;
-  height: 200px;
+  height: 500px;
+  width: 700px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  left: calc(50% - 250px);
-  top: calc(50% - 100px);
+  left: calc(50% - 350px);
+  top: calc(50% - 250px);
   z-index: 1001;
+}
+
+.modal table {
+  display: -webkit-inline-box;
 }
 
 .modal--visible {
   opacity: 1;
   visibility: visible;
+}
+
+.modal--contents {
+  display: table;
+  text-align: center;
+}
+
+.modal--contents th,
+.modal--contents td {
+  padding: 50px;
+}
+
+.modal--contents--img {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=modal.css.map */

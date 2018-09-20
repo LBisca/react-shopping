@@ -5,15 +5,34 @@
   text-align: center;
   position: fixed;
   border-radius: 3px;
-  width: 500px;
-  height: 200px;
+  height: 500px;
+  width: 700px;
   transition: 0.5s;
-  left: calc(50% - 250px);
-  top: calc(50% - 100px);
+  left: calc(50% - 350px);
+  top: calc(50% - 250px);
   z-index: 1001;
+
+  table {
+    display: -webkit-inline-box;
+  }
 
   &--visible {
     opacity: 1;
     visibility: visible;
+  }
+
+  &--contents {
+    display: table;
+    text-align: center;
+
+    th,
+    td {
+      padding: 50px;
+    }
+
+    &--img {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

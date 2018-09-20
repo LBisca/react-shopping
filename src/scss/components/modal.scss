@@ -27,6 +27,16 @@
     visibility: visible;
   }
 
+  &--remove {
+    background: url("../../media/svg/delete.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
   &--contents {
     display: table;
     text-align: center;

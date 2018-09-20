@@ -15,6 +15,10 @@ class Modal extends Component {
           </td>
           <td>{item.name}</td>
           <td>{item.price}</td>
+          <td
+            className="modal--remove"
+            onClick={() => this.props.removeProduct(index)}
+          />
         </tr>
       );
     });

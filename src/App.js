@@ -23,6 +23,16 @@ class App extends Component {
     this.setState({ shoppingList: [...this.state.shoppingList, product] });
   };
 
+  removeProduct = index => {
+    const { shoppingList } = this.state;
+
+    this.setState({
+      shoppingList: shoppingList.filter((item, i) => {
+        return i !== index;
+      })
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -32,7 +42,10 @@ class App extends Component {
           products={this.state.products}
           handleSubmit={this.handleSubmit}
         />
-        <Modal shoppingList={this.state.shoppingList} />
+        <Modal
+          shoppingList={this.state.shoppingList}
+          removeProduct={this.removeProduct}
+        />
         <Footer />
       </div>
     );

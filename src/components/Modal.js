@@ -3,7 +3,8 @@ import "../scss/components/modal.css";
 
 class Modal extends Component {
   render = props => {
-    const items = this.props.shoppingList.map((item, index) => {
+    const { shoppingList } = this.props;
+    const items = shoppingList.map((item, index) => {
       return (
         <tr>
           <td className="modal--contents--unit">
@@ -23,9 +24,10 @@ class Modal extends Component {
       );
     });
 
-    // const total = this.props.shoppingList.map((item, index) => {
-    //   item.price
-    // })
+    let total = 0;
+    total = shoppingList
+      .map(item => item.price)
+      .reduce((prev, next) => prev + next, 0);
 
     return (
       <div className="modal" id="modal">
@@ -36,7 +38,10 @@ class Modal extends Component {
             <th>Price</th>
           </tr>
           {items}
-          <tr>Total:</tr>
+          <tr>
+            Total:
+            {total.toFixed(2)}
+          </tr>
         </table>
       </div>
     );

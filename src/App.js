@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
+import Banner from "./components/Banner";
 import Products from "./components/Products";
-import Modal from "./components/Modal";
+import CartModal from "./components/Modal";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -38,11 +39,12 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="shadow" id="shadow" />
+        <Banner />
         <Products
           products={this.state.products}
           handleSubmit={this.handleSubmit}
         />
-        <Modal
+        <CartModal
           shoppingList={this.state.shoppingList}
           removeProduct={this.removeProduct}
         />

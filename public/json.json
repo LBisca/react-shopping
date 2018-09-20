@@ -1,50 +1,38 @@
 [
   {
-    "name": "grey t-shirt",
+    "name": "Grey T-Shirt",
     "type": "t-shirt",
-    "url": "mtsh0007s-gyaa.jpg",
+    "url": "grey-t-shirt.png",
     "price": 25.31
   },
   {
-    "name": "grey t-shirt",
-    "type": "t-shirt",
-    "url": "mtsh0007s-gyaa.jpg",
-    "price": 25.31
-  },
-  {
-    "name": "grey t-shirt",
-    "type": "t-shirt",
-    "url": "mtsh0007s-gyaa.jpg",
-    "price": 25.31
-  },
-  {
-    "name": "hair ointment",
-    "type": "cosmetic",
-    "url": "hair-oil.png",
+    "name": "Leather Jacket",
+    "type": "jacket",
+    "url": "leather-jacket.png",
     "price": 89.42
   },
   {
     "name": "blue t-shirt",
     "type": "t-shirt",
-    "url": "TM71B00PBLE_F_1.jpg",
-    "price": 19.99
-  },
-  {
-    "name": "blue t-shirt",
-    "type": "t-shirt",
-    "url": "TM71B00PBLE_F_1.jpg",
+    "url": "clothes.png",
     "price": 19.99
   },
   {
     "name": "dark jeans",
     "type": "pants",
-    "url": "1488961149.8659.jpg",
+    "url": "clothes.png",
     "price": 116.72
   },
   {
     "name": "dark jeans",
     "type": "pants",
-    "url": "1488961149.8659.jpg",
+    "url": "clothes.png",
+    "price": 116.72
+  },
+  {
+    "name": "dark jeans",
+    "type": "pants",
+    "url": "clothes.png",
     "price": 116.72
   }
 ]

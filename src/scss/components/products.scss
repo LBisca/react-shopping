@@ -1,9 +1,10 @@
 .products-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: [line1]33.33% [line2]33.33% [line3]33.33%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
-  max-width: 1080px;
+  max-width: 980px;
   flex-wrap: wrap;
   justify-content: center;
 }

@@ -7,6 +7,10 @@ class Modal extends Component {
     const items = shoppingList.map((item, index) => {
       return (
         <tr>
+          <td
+            className="modal--remove"
+            onClick={() => this.props.removeProduct(index)}
+          />
           <td className="modal--contents--unit">
             <img
               className="modal--contents--img"
@@ -16,10 +20,6 @@ class Modal extends Component {
           </td>
           <td>{item.name}</td>
           <td>{item.price}</td>
-          <td
-            className="modal--remove"
-            onClick={() => this.props.removeProduct(index)}
-          />
         </tr>
       );
     });
@@ -33,14 +33,18 @@ class Modal extends Component {
       <div className="modal" id="modal">
         <table className="modal--contents">
           <tr>
+            <th />
             <th>Item</th>
             <th>Name</th>
             <th>Price</th>
           </tr>
           {items}
           <tr>
-            Total:
-            {total.toFixed(2)}
+            <td />
+            <td>
+              Total:
+              {total.toFixed(2)}
+            </td>
           </tr>
         </table>
       </div>

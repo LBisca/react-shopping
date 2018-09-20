@@ -3,36 +3,42 @@
     "name": "Grey T-Shirt",
     "type": "t-shirt",
     "url": "grey-t-shirt.png",
-    "price": 25.31
+    "price": 25.31,
+    "promotion": true
   },
   {
     "name": "Leather Jacket",
     "type": "jacket",
     "url": "leather-jacket.png",
-    "price": 299.99
+    "price": 299.99,
+    "promotion": false
   },
   {
     "name": "blue t-shirt",
     "type": "t-shirt",
     "url": "clothes.png",
-    "price": 19.99
+    "price": 19.99,
+    "promotion": false
   },
   {
     "name": "dark jeans",
     "type": "pants",
     "url": "clothes.png",
-    "price": 116.72
+    "price": 116.72,
+    "promotion": false
   },
   {
     "name": "dark jeans",
     "type": "pants",
     "url": "clothes.png",
-    "price": 116.72
+    "price": 116.72,
+    "promotion": false
   },
   {
     "name": "dark jeans",
     "type": "pants",
     "url": "clothes.png",
-    "price": 116.72
+    "price": 116.72,
+    "promotion": false
   }
 ]

@@ -8,8 +8,11 @@ export default class Products extends Component {
     const { products, handleSubmit } = this.props;
 
     return (
-      <div className="products-container">
-        <Product productData={products} handleSubmit={handleSubmit} />
+      <div className="products">
+        <h1 className="products--title">Latest Products</h1>
+        <div className="products--container">
+          <Product productData={products} handleSubmit={handleSubmit} />
+        </div>
       </div>
     );
   };

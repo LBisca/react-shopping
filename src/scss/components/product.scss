@@ -6,10 +6,22 @@
   align-items: center;
   transition: 0.2s;
   z-index: 1;
-
   border: 1px solid #f7f6f6;
   padding: 25px;
   cursor: pointer;
+
+  &--promotion {
+    margin-right: auto;
+    padding: 14px 22px;
+    color: #fff;
+    background-color: #f54d56;
+    font-size: 16px;
+    display: none;
+
+    &--on {
+      display: block;
+    }
+  }
 
   &--image {
     background-position: center center;

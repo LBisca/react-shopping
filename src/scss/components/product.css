@@ -19,6 +19,19 @@
   cursor: pointer;
 }
 
+.product--promotion {
+  margin-right: auto;
+  padding: 14px 22px;
+  color: #fff;
+  background-color: #f54d56;
+  font-size: 16px;
+  display: none;
+}
+
+.product--promotion--on {
+  display: block;
+}
+
 .product--image {
   background-position: center center;
   max-height: 200px;

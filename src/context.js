@@ -8,7 +8,7 @@ export class Provider extends Component {
   };
 
   componentDidMount() {
-    fetch("https://api.myjson.com/bins/15310c")
+    fetch("https://api.myjson.com/bins/qwwt8")
       .then(result => result.json())
       .then(result => {
         this.setState({ products: result });

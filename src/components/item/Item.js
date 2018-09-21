@@ -6,7 +6,7 @@ export default props => {
   return (
     <Consumer>
       {value => {
-        console.log(value.products[1 - 1]);
+        console.log(value.products[props.match.params.id]);
         return <div />;
       }}
     </Consumer>

@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Grey T-Shirt",
     "type": "t-shirt",
     "url": "grey-t-shirt.png",
@@ -8,7 +8,7 @@
     "promotion": true
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "Leather Jacket",
     "type": "jacket",
     "url": "leather-jacket.png",
@@ -16,11 +16,19 @@
     "promotion": false
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "blue t-shirt",
     "type": "t-shirt",
     "url": "clothes.png",
     "price": 19.99,
+    "promotion": false
+  },
+  {
+    "id": 3,
+    "name": "dark jeans",
+    "type": "pants",
+    "url": "clothes.png",
+    "price": 116.72,
     "promotion": false
   },
   {
@@ -33,14 +41,6 @@
   },
   {
     "id": 5,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
-    "promotion": false
-  },
-  {
-    "id": 6,
     "name": "dark jeans",
     "type": "pants",
     "url": "clothes.png",

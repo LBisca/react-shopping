@@ -1,55 +1,49 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import Products from "./components/Products";
-import CartModal from "./components/Modal";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Provider } from "./context";
+
+import Header from "./components/layout/Header";
+import Banner from "./components/home/Banner";
+import Products from "./components/home/Products";
+import Item from "./components/item/Item";
+import CartModal from "./components/layout/Modal";
+import Footer from "./components/layout/Footer";
 import "./App.css";
 
 class App extends Component {
-  state = {
-    shoppingList: [],
-    products: []
-  };
+  // handleSubmit = product => {
+  //   this.setState({ shoppingList: [...this.state.shoppingList, product] });
+  // };
 
-  componentDidMount() {
-    fetch("./json.json")
-      .then(result => result.json())
-      .then(result => {
-        this.setState({ products: result });
-      });
-  }
+  // removeProduct = index => {
+  //   const { shoppingList } = this.state;
 
-  handleSubmit = product => {
-    this.setState({ shoppingList: [...this.state.shoppingList, product] });
-  };
-
-  removeProduct = index => {
-    const { shoppingList } = this.state;
-
-    this.setState({
-      shoppingList: shoppingList.filter((item, i) => {
-        return i !== index;
-      })
-    });
-  };
+  //   this.setState({
+  //     shoppingList: shoppingList.filter((item, i) => {
+  //       return i !== index;
+  //     })
+  //   });
+  // };
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <div className="shadow" id="shadow" />
-        <Banner />
-        <Products
-          products={this.state.products}
-          handleSubmit={this.handleSubmit}
-        />
-        <CartModal
-          shoppingList={this.state.shoppingList}
-          removeProduct={this.removeProduct}
-        />
-        <Footer />
-      </div>
+      <Provider>
+        <div className="App">
+          <Header />
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <React.Fragment>
+                  <Banner />
+                  <Products />
+                </React.Fragment>
+              </Route>
+              <Route exact path="/item/:id" component={Item} />
+            </Switch>
+          </Router>
+          <Footer />
+        </div>
+      </Provider>
     );
   }
 }

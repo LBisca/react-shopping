@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../scss/components/modal.css";
+import "../../scss/components/modal.css";
 
 class Modal extends Component {
   render = props => {
@@ -14,7 +14,7 @@ class Modal extends Component {
           <td className="modal--contents--unit">
             <img
               className="modal--contents--img"
-              src={require(`../media/img/${item.url}`)}
+              src={require(`../../media/img/${item.url}`)}
               alt=""
             />
           </td>

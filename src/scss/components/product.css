@@ -24,11 +24,11 @@
   color: #fff;
   background-color: #f54d56;
   font-size: 16px;
-  display: none;
+  opacity: 0;
 }
 
 .product--promotion--on {
-  display: block;
+  opacity: 1;
 }
 
 .product--image {

@@ -1,10 +1,24 @@
-import React, { Component } from "react";
-import "../../scss/components/cart.css";
+import React from "react";
+import { Consumer } from "../../context";
+import Product from "../home/Product";
+import "./cart.css";
 
-class Cart extends Component {
-  render() {
-    return <div className="cart" />;
-  }
-}
+const Cart = () => {
+  return (
+    <Consumer>
+      {value => {
+        return (
+          <div className="cart">
+            <div className="cart--contents">
+              {value.shoppingList.map(item => (
+                <Product key={item.id} item={item} />
+              ))}
+            </div>
+          </div>
+        );
+      }}
+    </Consumer>
+  );
+};
 
 export default Cart;

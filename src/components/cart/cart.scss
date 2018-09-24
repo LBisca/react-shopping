@@ -1,0 +1,11 @@
+.cart {
+  margin-top: 129px;
+  display: grid;
+  grid-template-columns: [border1]27px [middle]auto [border2]27px;
+
+  &--contents {
+    display: grid;
+    grid-column: middle;
+    grid-template-columns: [line1]33% [line2]33% [line3]33%;
+  }
+}

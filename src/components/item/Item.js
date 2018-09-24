@@ -1,26 +1,33 @@
 import { Consumer } from "../../context";
 import Product from "../home/Product";
 import Description from "./Description";
-import React from "react";
 
 import "../../scss/components/item.css";
+import React, { Component } from "react";
 
-export default props => {
-  return (
-    <Consumer>
-      {value => {
-        const { id } = props.match.params;
-        const { products } = value;
+class Item extends Component {
+  state = {
+    shoppingList: []
+  };
 
-        return (
-          <div className="item">
-            <div className="item--container">
-              <Description />
-              <Product item={products[id]} />
+  render = props => {
+    return (
+      <Consumer>
+        {value => {
+          const { id } = this.props.match.params;
+
+          return (
+            <div className="item">
+              <div className="item--container">
+                <Description />
+                <Product item={value.products[id]} />
+              </div>
             </div>
-          </div>
-        );
-      }}
-    </Consumer>
-  );
-};
+          );
+        }}
+      </Consumer>
+    );
+  };
+}
+
+export default Item;

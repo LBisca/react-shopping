@@ -4,7 +4,7 @@ import "../../scss/components/products.css";
 
 import React, { Component } from "react";
 
-export default class Products extends Component {
+class Products extends Component {
   render = props => {
     return (
       <Consumer>
@@ -24,3 +24,5 @@ export default class Products extends Component {
     );
   };
 }
+
+export default Products;

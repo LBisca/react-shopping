@@ -1,16 +1,26 @@
 .item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [borderStart] 27px [content] auto [borderEnd] 27px;
-      grid-template-columns: [borderStart] 27px [content] auto [borderEnd] 27px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item .description {
+  max-width: 65%;
+}
+
+.item .product {
+  width: 325px;
 }
 
 .item--container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [col1] 65% [col2] 35%;
-      grid-template-columns: [col1] 65% [col2] 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   grid-column: content;
-  margin-top: 129px;
+  margin-top: 130px;
 }
 /*# sourceMappingURL=item.css.map */

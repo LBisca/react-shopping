@@ -18,6 +18,9 @@ const Description = () => {
         dolor tempus, imperdiet lectus quis, interdum eros. Cras commodo congue
         enim eu pellentesque.
       </div>
+      <div to={"/cart"} className="button">
+        Add to Cart
+      </div>
     </div>
   );
 };

@@ -7,6 +7,8 @@ import Banner from "./components/home/Banner";
 import Products from "./components/home/Products";
 import Item from "./components/item/Item";
 import Footer from "./components/layout/Footer";
+import Cart from "./components/cart/Cart";
+
 import "./App.css";
 
 class App extends Component {
@@ -37,7 +39,10 @@ class App extends Component {
                   <Products />
                 </React.Fragment>
               </Route>
+
               <Route exact path="/item/:id" component={Item} />
+
+              <Route exact path="/cart" component={Cart} />
             </Switch>
           </Router>
           <Footer />

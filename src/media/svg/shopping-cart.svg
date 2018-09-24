@@ -1,32 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="70.43" height="46.954" viewBox="0 0 72 48">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #f4f4f4;
-        stroke: #7f7e7e;
-        stroke-linejoin: round;
-        stroke-width: 2px;
-        fill-opacity: 0;
-      }
 
-      .cls-1, .cls-2 {
-        filter: url(#drop-shadow-1);
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        fill: #7f7e7e;
-      }
-    </style>
-
-    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-      <feOffset dy="1" in="SourceAlpha"/>
-      <feGaussianBlur result="dropBlur"/>
-      <feFlood flood-color="#fff"/>
-      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
-      <feComposite in="SourceGraphic" result="shadowed"/>
-    </filter>
-  </defs>
   <g>
     <g style="fill: #f4f4f4; filter: url(#drop-shadow-1)">
       <path d="M23.500,1.500 L48.500,1.500 C60.926,1.500 71.000,11.573 71.000,24.000 C71.000,36.426 60.926,46.500 48.500,46.500 L23.500,46.500 C11.073,46.500 1.000,36.426 1.000,24.000 C1.000,11.573 11.073,1.500 23.500,1.500 Z" id="path-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>

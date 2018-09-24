@@ -2,9 +2,25 @@ import React, { Component } from "react";
 
 const Context = React.createContext();
 
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "UPDATE_CONTACT":
+      return {
+        ...state,
+        shoppingList: [...state.shoppingList, action.payload]
+      };
+    default:
+      return state;
+  }
+};
+
 export class Provider extends Component {
   state = {
-    products: []
+    products: [],
+    shoppingList: [],
+    dispatch: action => {
+      this.setState(state => reducer(state, action));
+    }
   };
 
   componentDidMount() {
@@ -17,7 +33,7 @@ export class Provider extends Component {
 
   render() {
     return (
-      <Context.Provider value={this.state} handleSubmit={this.handleSubmit}>
+      <Context.Provider value={this.state}>
         {this.props.children}
       </Context.Provider>
     );

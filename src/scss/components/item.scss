@@ -1,11 +1,21 @@
 .item {
-  display: grid;
-  grid-template-columns: [borderStart]27px [content]auto [borderEnd]27px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .description {
+    max-width: 65%;
+  }
+
+  .product {
+    width: 325px;
+  }
 
   &--container {
-    display: grid;
-    grid-template-columns: [col1]65% [col2]35%;
+    display: flex;
+    flex-direction: row;
+
     grid-column: content;
-    margin-top: 129px;
+    margin-top: 130px;
   }
 }

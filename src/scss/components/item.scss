@@ -1,0 +1,11 @@
+.item {
+  display: grid;
+  grid-template-columns: [borderStart]27px [content]auto [borderEnd]27px;
+
+  &--container {
+    display: grid;
+    grid-template-columns: [col1]65% [col2]35%;
+    grid-column: content;
+    margin-top: 129px;
+  }
+}

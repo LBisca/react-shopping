@@ -6,7 +6,6 @@ import Header from "./components/layout/Header";
 import Banner from "./components/home/Banner";
 import Products from "./components/home/Products";
 import Item from "./components/item/Item";
-import CartModal from "./components/layout/Modal";
 import Footer from "./components/layout/Footer";
 import "./App.css";
 

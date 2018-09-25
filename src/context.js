@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 const Context = React.createContext();
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "UPDATE_CONTACT":
+    case "UPDATE_ITEM":
       return {
         ...state,
         shoppingList: [...state.shoppingList, action.payload],
@@ -15,6 +16,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         total: action.payload
+      };
+
+    case "CLEAR_CART":
+      return {
+        ...state,
+        shoppingList: [],
+        total: 0
       };
     default:
       return state;
@@ -31,12 +39,9 @@ export class Provider extends Component {
     }
   };
 
-  componentDidMount() {
-    fetch("https://api.myjson.com/bins/qwwt8")
-      .then(result => result.json())
-      .then(result => {
-        this.setState({ products: result });
-      });
+  async componentDidMount() {
+    const result = await axios.get("https://api.myjson.com/bins/qwwt8");
+    this.setState({ products: result.data });
   }
 
   render() {

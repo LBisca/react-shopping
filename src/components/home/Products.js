@@ -14,8 +14,8 @@ const Products = () => {
             <div className="products">
               <h1 className="products--title">Latest Products</h1>
               <div className="products--container">
-                {value.products.map(item => (
-                  <Product key={item.id} item={item} />
+                {value.products.map((item, index) => (
+                  <Product key={index} item={item} />
                 ))}
               </div>
             </div>

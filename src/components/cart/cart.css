@@ -22,4 +22,17 @@
   -ms-grid-columns: [line1] 33% [line2] 33% [line3] 33%;
       grid-template-columns: [line1] 33% [line2] 33% [line3] 33%;
 }
+
+.delete {
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+  padding: 20px;
+  color: white;
+  background-color: #f54d56;
+  cursor: pointer;
+}
 /*# sourceMappingURL=cart.css.map */

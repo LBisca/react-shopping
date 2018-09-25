@@ -10,6 +10,7 @@ class Item extends Component {
   onUpdateClick = (product, dispatch) => {
     dispatch({ type: "UPDATE_CONTACT", payload: product });
   };
+
   render() {
     return (
       <Consumer>

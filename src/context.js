@@ -7,7 +7,14 @@ const reducer = (state, action) => {
     case "UPDATE_CONTACT":
       return {
         ...state,
-        shoppingList: [...state.shoppingList, action.payload]
+        shoppingList: [...state.shoppingList, action.payload],
+        total: state.total + action.payload.price
+      };
+
+    case "UPDATE_TOTAL":
+      return {
+        ...state,
+        total: action.payload
       };
     default:
       return state;
@@ -18,6 +25,7 @@ export class Provider extends Component {
   state = {
     products: [],
     shoppingList: [],
+    total: 0,
     dispatch: action => {
       this.setState(state => reducer(state, action));
     }

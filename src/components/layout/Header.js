@@ -1,4 +1,5 @@
 import { Consumer } from "../../context";
+import { Link } from "react-router-dom";
 import "../../scss/components/header.css";
 
 import React from "react";
@@ -10,7 +11,9 @@ export default () => {
         return (
           <header className="navigation-bar">
             <div className="navigation-bar--contents">
-              <div className="navigation-bar--text">Shopping</div>
+              <Link to="/" className="navigation-bar--text">
+                Shopping
+              </Link>
               <div className="navigation-bar--menu">
                 <ul>
                   <li>Men</li>
@@ -18,11 +21,7 @@ export default () => {
                   <li>About</li>
                 </ul>
               </div>
-              <a
-                href="/cart"
-                className="navigation-bar--cart"
-                onClick={value.handleSubmit}
-              />
+              <Link to={"/cart"} className="navigation-bar--cart" />
             </div>
           </header>
         );

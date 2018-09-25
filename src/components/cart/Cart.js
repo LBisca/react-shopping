@@ -1,24 +1,28 @@
-import React from "react";
 import { Consumer } from "../../context";
 import Product from "../home/Product";
 import "./cart.css";
 
-const Cart = () => {
-  return (
-    <Consumer>
-      {value => {
-        return (
-          <div className="cart">
-            <div className="cart--contents">
-              {value.shoppingList.map(item => (
-                <Product key={item.id} item={item} />
-              ))}
+import React, { Component } from "react";
+
+class Cart extends Component {
+  render() {
+    return (
+      <Consumer>
+        {value => {
+          return (
+            <div className="cart">
+              <div>{value.total}</div>
+              <div className="cart--contents">
+                {value.shoppingList.map(item => (
+                  <Product item={item} />
+                ))}
+              </div>
             </div>
-          </div>
-        );
-      }}
-    </Consumer>
-  );
-};
+          );
+        }}
+      </Consumer>
+    );
+  }
+}
 
 export default Cart;

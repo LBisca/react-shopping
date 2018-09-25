@@ -19,8 +19,8 @@
   display: -ms-grid;
   display: grid;
   grid-column: middle;
-  -ms-grid-columns: [line1] 33% [line2] 33% [line3] 33%;
-      grid-template-columns: [line1] 33% [line2] 33% [line3] 33%;
+  -ms-grid-columns: [line1] 40% [line2] 60%;
+      grid-template-columns: [line1] 40% [line2] 60%;
 }
 
 .delete {

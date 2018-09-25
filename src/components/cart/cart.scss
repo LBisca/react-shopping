@@ -13,9 +13,16 @@
   grid-template-columns: [border1]27px [middle]auto [border2]27px;
 
   &--contents {
-    display: grid;
-    grid-column: middle;
-    grid-template-columns: [line1]33% [line2]33% [line3]33%;
+    &--desc {
+      padding: 50px;
+      text-align: center;
+      color: #717171;
+    }
+
+    &--wrapper {
+      display: grid;
+      grid-template-columns: [col1]50% [col2]50%;
+    }
   }
 }
 

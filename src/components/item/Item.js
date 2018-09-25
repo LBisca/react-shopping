@@ -2,7 +2,6 @@ import { Consumer } from "../../context";
 import Product from "../home/Product";
 import { Link } from "react-router-dom";
 import Description from "./Description";
-import axios from "axios";
 
 import "../../scss/components/item.css";
 import React, { Component } from "react";

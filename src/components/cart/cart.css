@@ -1,5 +1,14 @@
-.cart {
+.container {
   margin-top: 129px;
+}
+
+.total {
+  font-size: 30px;
+  margin-left: 27px;
+  font-weight: bold;
+}
+
+.cart {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [border1] 27px [middle] auto [border2] 27px;

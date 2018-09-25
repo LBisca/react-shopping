@@ -10,12 +10,14 @@ class Cart extends Component {
       <Consumer>
         {value => {
           return (
-            <div className="cart">
-              <div>{value.total}</div>
-              <div className="cart--contents">
-                {value.shoppingList.map(item => (
-                  <Product item={item} />
-                ))}
+            <div className="container">
+              <div className="total">{`Total: R$ ${value.total}`}</div>
+              <div className="cart">
+                <div className="cart--contents">
+                  {value.shoppingList.map(item => (
+                    <Product item={item} />
+                  ))}
+                </div>
               </div>
             </div>
           );

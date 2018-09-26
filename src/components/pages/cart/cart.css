@@ -67,5 +67,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .grid-container--last .description {
+    display: block;
+  }
 }
 /*# sourceMappingURL=cart.css.map */

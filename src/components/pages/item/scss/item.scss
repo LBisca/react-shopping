@@ -5,15 +5,24 @@
 
   .description {
     max-width: 65%;
+    display: none;
+
+    @media only screen and (min-width: 720px) {
+      display: block;
+    }
   }
 
   .product {
+    margin-right: auto;
+    margin-left: auto;
     width: 325px;
   }
 
   &--container {
     display: flex;
     flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
 
     grid-column: content;
     margin-top: 130px;
@@ -23,7 +32,7 @@
 .button {
   display: block;
   margin: 10px;
-  margin-top: -65px;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -32,4 +41,8 @@
   color: white;
   background-color: #f54d56;
   cursor: pointer;
+
+  @media only screen and (min-width: 720px) {
+    margin-top: -65px;
+  }
 }

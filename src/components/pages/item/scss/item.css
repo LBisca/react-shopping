@@ -6,9 +6,18 @@
 
 .item .description {
   max-width: 65%;
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .item .description {
+    display: block;
+  }
 }
 
 .item .product {
+  margin-right: auto;
+  margin-left: auto;
   width: 325px;
 }
 
@@ -20,6 +29,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
   grid-column: content;
   margin-top: 130px;
 }
@@ -27,7 +38,6 @@
 .button {
   display: block;
   margin: 10px;
-  margin-top: -65px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -36,5 +46,11 @@
   color: white;
   background-color: #f54d56;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 720px) {
+  .button {
+    margin-top: -65px;
+  }
 }
 /*# sourceMappingURL=item.css.map */

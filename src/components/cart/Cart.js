@@ -17,7 +17,7 @@ class Cart extends Component {
           const products = value.shoppingList.map((item, index) => {
             return (
               <div className="grid-container" key={index}>
-                <div className="first">
+                <div className="grid-container--first">
                   <Product item={item} />
                   <div
                     className="delete"
@@ -30,7 +30,7 @@ class Cart extends Component {
                     REMOVE
                   </div>
                 </div>
-                <div className="last">
+                <div className="grid-container--last">
                   <Description />
                 </div>
               </div>

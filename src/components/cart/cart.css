@@ -25,11 +25,9 @@
 
 .delete {
   display: block;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px;
+  margin-bottom: 10px;
   text-align: center;
-  width: 150px;
   padding: 20px;
   color: white;
   background-color: #f54d56;
@@ -41,6 +39,9 @@
   display: grid;
   -ms-grid-columns: [col1] 30% [col2] 70%;
       grid-template-columns: [col1] 30% [col2] 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .grid-container--first {
@@ -48,6 +49,17 @@
 }
 
 .grid-container--last {
+  display: -ms-grid;
+  display: grid;
   grid-column: col2;
+}
+
+.grid-container--last .description {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=cart.css.map */

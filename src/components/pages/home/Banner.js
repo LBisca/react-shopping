@@ -1,5 +1,5 @@
 import React from "react";
-import "../../scss/components/banner.css";
+import "./scss/banner.css";
 
 export default () => {
   return <div className="banner" />;

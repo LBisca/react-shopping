@@ -1,7 +1,7 @@
 import Product from "./Product";
-import { Consumer } from "../../context";
+import { Consumer } from "../../../context";
 import Banner from "./Banner";
-import "../../scss/components/products.css";
+import "./scss/products.css";
 import React from "react";
 
 const Products = () => {

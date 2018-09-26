@@ -67,7 +67,7 @@
 }
 
 .product--button--minus {
-  background: url("../../media/svg/minus.svg");
+  background: url("../../../../media/svg/minus.svg");
 }
 
 .product--button--counter {
@@ -77,7 +77,7 @@
 }
 
 .product--button--plus {
-  background: url("../../media/svg/add.svg");
+  background: url("../../../../media/svg/add.svg");
 }
 
 .product:hover {

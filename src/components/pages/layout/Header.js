@@ -1,6 +1,6 @@
-import { Consumer } from "../../context";
+import { Consumer } from "../../../context";
 import { Link } from "react-router-dom";
-import "../../scss/components/header.css";
+import "./scss/header.css";
 
 import React from "react";
 

@@ -1,4 +1,4 @@
-import { Consumer } from "../../context";
+import { Consumer } from "../../../context";
 import React, { Component } from "react";
 import Product from "../home/Product";
 

@@ -1,10 +1,10 @@
-import { Consumer } from "../../context";
+import { Consumer } from "../../../context";
 import Product from "../home/Product";
 import { Link } from "react-router-dom";
 import Description from "./Description";
 import uuid from "uuid";
 
-import "../../scss/components/item.css";
+import "./scss/item.css";
 import React, { Component } from "react";
 
 class Item extends Component {

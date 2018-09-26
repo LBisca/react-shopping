@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "../../scss/components/product.css";
+import "./scss/product.css";
 import React from "react";
 
 const Product = props => {
@@ -17,7 +17,7 @@ const Product = props => {
       <div className={`product--promotion ${promotion}`}>-50%</div>
       <img
         className="product--image"
-        src={require(`../../media/img/${item.url}`)}
+        src={require(`../../../media/img/${item.url}`)}
       />
       <div className="product--name">{item.name}</div>
       <div className="product--price">R$ {item.price}</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../scss/components/description.css";
+import "./scss/description.css";
 
 const Description = () => {
   return (

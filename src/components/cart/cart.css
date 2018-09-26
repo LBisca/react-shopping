@@ -1,5 +1,7 @@
 .container {
   margin-top: 129px;
+  min-height: 100%;
+  padding-bottom: 100vh;
 }
 
 .total {

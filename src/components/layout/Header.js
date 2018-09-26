@@ -16,9 +16,15 @@ export default () => {
               </Link>
               <div className="navigation-bar--menu">
                 <ul>
-                  <li>Men</li>
-                  <li>Women</li>
-                  <li>About</li>
+                  <Link className={"link"} to={"/women"}>
+                    Women
+                  </Link>
+                  <Link className={"link"} to={"/men"}>
+                    Men
+                  </Link>
+                  <Link className={"link"} to={"/about"}>
+                    About
+                  </Link>
                 </ul>
               </div>
               <Link to={"/cart"} className="navigation-bar--cart" />

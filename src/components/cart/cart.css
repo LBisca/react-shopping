@@ -7,7 +7,12 @@
 .total {
   font-size: 30px;
   margin-left: 27px;
+  padding: 55px;
+  font-size: 20px;
+  color: #656363;
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .cart {

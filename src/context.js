@@ -8,9 +8,14 @@ const reducer = (state, action) => {
     case "UPDATE_ITEM":
       return {
         ...state,
-        shoppingList: [...state.shoppingList, action.payload],
+        shoppingList: [...state.shoppingList, action.payload]
+      };
 
-        total: state.total + action.payload.price
+    case "UPDATE_TOTAL":
+      return {
+        total: state.shoppingList
+          .map(item => item.price)
+          .reduce((prev, next) => prev + next, 0)
       };
 
     case "REMOVE_FROM_CART":
@@ -18,9 +23,7 @@ const reducer = (state, action) => {
         ...state,
         shoppingList: state.shoppingList.filter(
           product => product.orderId !== action.payload.orderId
-        ),
-
-        total: state.total - action.payload.price
+        )
       };
 
     default:

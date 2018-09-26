@@ -8,6 +8,9 @@ import Description from "../item/Description";
 class Cart extends Component {
   onDeleteClick(item, dispatch) {
     dispatch({ type: "REMOVE_FROM_CART", payload: item });
+    dispatch({
+      type: "UPDATE_TOTAL"
+    });
   }
 
   render() {

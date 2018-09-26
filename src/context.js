@@ -16,6 +16,7 @@ const reducer = (state, action) => {
         total: state.shoppingList
           .map(item => item.price)
           .reduce((prev, next) => prev + next, 0)
+          .toFixed(2)
       };
 
     case "REMOVE_FROM_CART":

@@ -12,19 +12,14 @@ const reducer = (state, action) => {
 
         total: state.total + action.payload.price
       };
-
-    case "UPDATE_TOTAL":
-      return {
-        ...state,
-        total: action.payload
-      };
-
     case "REMOVE_FROM_CART":
       return {
         ...state,
         shoppingList: state.shoppingList.filter(
           product => product.orderId !== action.payload.orderId
-        )
+        ),
+
+        total: state.total - action.payload.price
       };
     default:
       return state;

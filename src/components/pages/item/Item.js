@@ -21,10 +21,6 @@ class Item extends Component {
         promotion: product.promotion
       }
     });
-
-    dispatch({
-      type: "UPDATE_TOTAL"
-    });
   };
 
   render() {

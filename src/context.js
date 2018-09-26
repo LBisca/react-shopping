@@ -11,14 +11,6 @@ const reducer = (state, action) => {
         shoppingList: [...state.shoppingList, action.payload]
       };
 
-    case "UPDATE_TOTAL":
-      return {
-        total: state.shoppingList
-          .map(item => item.price)
-          .reduce((prev, next) => prev + next, 0)
-          .toFixed(2)
-      };
-
     case "REMOVE_FROM_CART":
       return {
         ...state,
@@ -36,7 +28,6 @@ export class Provider extends Component {
   state = {
     products: [],
     shoppingList: [],
-    total: 0,
     dispatch: action => {
       this.setState(state => reducer(state, action));
     }

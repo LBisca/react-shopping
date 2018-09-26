@@ -4,7 +4,7 @@ import "../style.css";
 export default () => {
   return (
     <div className="container">
-      <h1 style={{ marginTop: "129px" }}>Nothing Here</h1>
+      <h1 style={{ marginTop: "129px" }}>Women Page</h1>
     </div>
   );
 };

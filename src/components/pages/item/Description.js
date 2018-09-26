@@ -12,11 +12,7 @@ const Description = () => {
         Quisque risus nulla, rhoncus a turpis eu, ultricies scelerisque turpis.
         Aliquam placerat ultricies mauris at sodales. Etiam et dolor nisl. Nunc
         in dictum nisi. Vestibulum ante ipsum primis in faucibus orci luctus et
-        ultrices posuere cubilia Curae; Sed congue, arcu ac sodales fermentum,
-        lorem diam pulvinar orci, at pretium augue velit ut purus. Suspendisse
-        molestie tellus purus, viverra euismod sapien egestas ut. Nullam et
-        dolor tempus, imperdiet lectus quis, interdum eros. Cras commodo congue
-        enim eu pellentesque.
+        ultrices posuere cubilia Curae; Sed congue.
       </div>
     </div>
   );

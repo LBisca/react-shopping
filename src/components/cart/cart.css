@@ -39,8 +39,8 @@
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [col1] 40% [col2] 60%;
-      grid-template-columns: [col1] 40% [col2] 60%;
+  -ms-grid-columns: [col1] 30% [col2] 70%;
+      grid-template-columns: [col1] 30% [col2] 70%;
 }
 
 .grid-container--first {

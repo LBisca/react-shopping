@@ -34,7 +34,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: [col1]40% [col2]60%;
+  grid-template-columns: [col1]30% [col2]70%;
 
   &--first {
     grid-column: col1;

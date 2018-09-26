@@ -10,11 +10,15 @@
 
   &--container {
     display: grid;
-    grid-template-columns: [line1]33.33% [line2]33.33% [line3]33.33%;
+    grid-template-columns: [line1]auto;
     margin-left: auto;
     margin-right: auto;
     max-width: 980px;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media only screen and (min-width: 720px) {
+      grid-template-columns: [line1]33.33% [line2]33.33% [line3]33.33%;
+    }
   }
 }

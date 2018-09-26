@@ -10,8 +10,8 @@
 .products--container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [line1] 33.33% [line2] 33.33% [line3] 33.33%;
-      grid-template-columns: [line1] 33.33% [line2] 33.33% [line3] 33.33%;
+  -ms-grid-columns: [line1] auto;
+      grid-template-columns: [line1] auto;
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
@@ -20,5 +20,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .products--container {
+    -ms-grid-columns: [line1] 33.33% [line2] 33.33% [line3] 33.33%;
+        grid-template-columns: [line1] 33.33% [line2] 33.33% [line3] 33.33%;
+  }
 }
 /*# sourceMappingURL=products.css.map */

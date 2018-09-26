@@ -15,6 +15,11 @@ ul {
   margin-right: 15px;
   transition: 0.4s;
   cursor: pointer;
+  display: none;
+
+  @media only screen and (min-width: 720px) {
+    display: unset;
+  }
 }
 
 .link:hover {

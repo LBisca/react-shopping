@@ -18,6 +18,13 @@ ul {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .link {
+    display: unset;
+  }
 }
 
 .link:hover {

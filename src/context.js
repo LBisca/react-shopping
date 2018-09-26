@@ -12,6 +12,7 @@ const reducer = (state, action) => {
 
         total: state.total + action.payload.price
       };
+
     case "REMOVE_FROM_CART":
       return {
         ...state,
@@ -21,6 +22,7 @@ const reducer = (state, action) => {
 
         total: state.total - action.payload.price
       };
+
     default:
       return state;
   }

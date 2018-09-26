@@ -19,8 +19,8 @@
   display: -ms-grid;
   display: grid;
   grid-column: middle;
-  -ms-grid-columns: [line1] 40% [line2] 60%;
-      grid-template-columns: [line1] 40% [line2] 60%;
+  -ms-grid-columns: [middle] auto;
+      grid-template-columns: [middle] auto;
 }
 
 .delete {
@@ -34,5 +34,20 @@
   color: white;
   background-color: #f54d56;
   cursor: pointer;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [col1] 40% [col2] 60%;
+      grid-template-columns: [col1] 40% [col2] 60%;
+}
+
+.grid-container--first {
+  grid-column: col1;
+}
+
+.grid-container--last {
+  grid-column: col2;
 }
 /*# sourceMappingURL=cart.css.map */

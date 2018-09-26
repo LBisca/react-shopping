@@ -13,16 +13,9 @@
   grid-template-columns: [border1]27px [middle]auto [border2]27px;
 
   &--contents {
-    &--desc {
-      padding: 50px;
-      text-align: center;
-      color: #717171;
-    }
-
-    &--wrapper {
-      display: grid;
-      grid-template-columns: [col1]50% [col2]50%;
-    }
+    display: grid;
+    grid-column: middle;
+    grid-template-columns: [middle]auto;
   }
 }
 
@@ -37,4 +30,17 @@
   color: white;
   background-color: #f54d56;
   cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: [col1]40% [col2]60%;
+
+  &--first {
+    grid-column: col1;
+  }
+
+  &--last {
+    grid-column: col2;
+  }
 }

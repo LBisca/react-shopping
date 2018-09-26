@@ -1,7 +1,9 @@
 import { Consumer } from "../../context";
 import React, { Component } from "react";
 import Product from "../home/Product";
+
 import "./cart.css";
+import Description from "../item/Description";
 
 class Cart extends Component {
   onDeleteClick(item, dispatch) {
@@ -12,27 +14,34 @@ class Cart extends Component {
     return (
       <Consumer>
         {value => {
+          const products = value.shoppingList.map((item, index) => {
+            return (
+              <div className="grid-container" key={index}>
+                <div className="first">
+                  <Product item={item} />
+                  <div
+                    className="delete"
+                    onClick={this.onDeleteClick.bind(
+                      this,
+                      item,
+                      value.dispatch
+                    )}
+                  >
+                    REMOVE
+                  </div>
+                </div>
+                <div className="last">
+                  <Description />
+                </div>
+              </div>
+            );
+          });
+
           return (
             <div className="container">
               <div className="total">{`Total: R$ ${value.total}`}</div>
               <div className="cart">
-                <div className="cart--contents">
-                  {value.shoppingList.map((item, index) => (
-                    <div key={index}>
-                      <Product item={item} />
-                      <div
-                        className="delete"
-                        onClick={this.onDeleteClick.bind(
-                          this,
-                          item,
-                          value.dispatch
-                        )}
-                      >
-                        CLEAR CART
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <div className="cart--contents">{products}</div>
               </div>
             </div>
           );

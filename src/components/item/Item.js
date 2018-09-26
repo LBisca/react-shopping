@@ -2,13 +2,25 @@ import { Consumer } from "../../context";
 import Product from "../home/Product";
 import { Link } from "react-router-dom";
 import Description from "./Description";
+import uuid from "uuid";
 
 import "../../scss/components/item.css";
 import React, { Component } from "react";
 
 class Item extends Component {
   onUpdateClick = (product, dispatch) => {
-    dispatch({ type: "UPDATE_ITEM", payload: product });
+    dispatch({
+      type: "UPDATE_ITEM",
+      payload: {
+        orderId: uuid(),
+        id: product.id,
+        name: product.name,
+        type: product.type,
+        url: product.url,
+        price: product.price,
+        promotion: product.promotion
+      }
+    });
   };
 
   render() {

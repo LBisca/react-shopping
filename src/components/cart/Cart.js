@@ -4,8 +4,8 @@ import Product from "../home/Product";
 import "./cart.css";
 
 class Cart extends Component {
-  onDeleteClick(index, dispatch) {
-    dispatch({ type: "CLEAR_CART" });
+  onDeleteClick(item, dispatch) {
+    dispatch({ type: "REMOVE_FROM_CART", payload: item });
   }
 
   render() {
@@ -24,7 +24,7 @@ class Cart extends Component {
                         className="delete"
                         onClick={this.onDeleteClick.bind(
                           this,
-                          index,
+                          item,
                           value.dispatch
                         )}
                       >

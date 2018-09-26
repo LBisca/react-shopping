@@ -9,6 +9,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         shoppingList: [...state.shoppingList, action.payload],
+
         total: state.total + action.payload.price
       };
 
@@ -18,11 +19,12 @@ const reducer = (state, action) => {
         total: action.payload
       };
 
-    case "CLEAR_CART":
+    case "REMOVE_FROM_CART":
       return {
         ...state,
-        shoppingList: [],
-        total: 0
+        shoppingList: state.shoppingList.filter(
+          product => product.orderId !== action.payload.orderId
+        )
       };
     default:
       return state;

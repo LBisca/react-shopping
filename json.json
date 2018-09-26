@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Grey T-Shirt",
+    "type": "t-shirt",
+    "url": "grey-t-shirt.png",
+    "price": 25.31,
+    "promotion": true
+  },
+  {
+    "id": 1,
+    "name": "Leather Jacket",
+    "type": "jacket",
+    "url": "leather-jacket.png",
+    "price": 299.99,
+    "promotion": false
+  },
+  {
+    "id": 2,
+    "name": "Simple Scarf",
+    "type": "scarf",
+    "url": "scarf.png",
+    "price": 22.47,
+    "promotion": false
+  }
+]

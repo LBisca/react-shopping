@@ -42,7 +42,7 @@ export class Provider extends Component {
   };
 
   async componentDidMount() {
-    const result = await axios.get("https://api.myjson.com/bins/qwwt8");
+    const result = await axios.get("https://api.myjson.com/bins/wys94");
     this.setState({ products: result.data });
   }
 

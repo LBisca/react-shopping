@@ -19,11 +19,6 @@
   }
 }
 
-.product {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .cart {
   display: -ms-grid;
   display: grid;

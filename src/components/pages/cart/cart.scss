@@ -5,13 +5,21 @@
 
 .total {
   font-size: 30px;
-  margin-left: 27px;
   padding: 55px;
   font-size: 20px;
   color: #656363;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+
+  @media only screen and (min-width: 720px) {
+    margin-left: 27px;
+  }
+}
+
+.product {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cart {
@@ -38,8 +46,12 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: [col1]30% [col2]70%;
+  grid-template-columns: [col1]auto;
   justify-content: center;
+
+  @media only screen and (min-width: 720px) {
+    grid-template-columns: [col1]30% [col2]70%;
+  }
 
   &--first {
     grid-column: col1;

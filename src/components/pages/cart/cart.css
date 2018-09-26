@@ -5,13 +5,23 @@
 
 .total {
   font-size: 30px;
-  margin-left: 27px;
   padding: 55px;
   font-size: 20px;
   color: #656363;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .total {
+    margin-left: 27px;
+  }
+}
+
+.product {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cart {
@@ -43,11 +53,18 @@
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [col1] 30% [col2] 70%;
-      grid-template-columns: [col1] 30% [col2] 70%;
+  -ms-grid-columns: [col1] auto;
+      grid-template-columns: [col1] auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .grid-container {
+    -ms-grid-columns: [col1] 30% [col2] 70%;
+        grid-template-columns: [col1] 30% [col2] 70%;
+  }
 }
 
 .grid-container--first {

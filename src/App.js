@@ -34,6 +34,7 @@ class App extends Component {
 
             <Route component={NotFound} />
           </Switch>
+          <div className="pushDown" />
           <Footer />
         </div>
       </Router>

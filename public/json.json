@@ -17,34 +17,10 @@
   },
   {
     "id": 2,
-    "name": "blue t-shirt",
-    "type": "t-shirt",
-    "url": "clothes.png",
-    "price": 19.99,
-    "promotion": false
-  },
-  {
-    "id": 3,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
-    "promotion": false
-  },
-  {
-    "id": 4,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
-    "promotion": false
-  },
-  {
-    "id": 5,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
+    "name": "Simple Scarf",
+    "type": "scarf",
+    "url": "scarf.png",
+    "price": 22.47,
     "promotion": false
   }
 ]

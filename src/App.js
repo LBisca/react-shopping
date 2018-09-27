@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Provider } from "./context";
 
 import Header from "./components/pages/layout/Header";
 import Products from "./components/pages/home/Products";
@@ -17,29 +16,27 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <Provider>
-        <Router>
-          <div className="App">
-            <Header />
-            <Switch>
-              <Route exact path="/" component={Products} />
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Products} />
 
-              <Route exact path="/item/:id" component={Item} />
+            <Route exact path="/item/:id" component={Item} />
 
-              <Route exact path="/cart" component={Cart} />
+            <Route exact path="/cart" component={Cart} />
 
-              <Route exact path="/men" component={Men} />
+            <Route exact path="/men" component={Men} />
 
-              <Route exact path="/women" component={Women} />
+            <Route exact path="/women" component={Women} />
 
-              <Route exact path="/about" component={About} />
+            <Route exact path="/about" component={About} />
 
-              <Route component={NotFound} />
-            </Switch>
-            <Footer />
-          </div>
-        </Router>
-      </Provider>
+            <Route component={NotFound} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

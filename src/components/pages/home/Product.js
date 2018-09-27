@@ -17,6 +17,7 @@ const Product = props => {
       <div className={`product--promotion ${promotion}`}>-50%</div>
       <img
         className="product--image"
+        alt={"Product"}
         src={require(`../../../media/img/${item.url}`)}
       />
       <div className="product--name">{item.name}</div>

@@ -34,7 +34,7 @@ export class Provider extends Component {
   };
 
   async componentDidMount() {
-    const result = await axios.get("https://api.myjson.com/bins/wys94");
+    const result = await axios.get("https://api.myjson.com/bins/1ca2pc");
     this.setState({ products: result.data });
   }
 

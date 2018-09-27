@@ -1,10 +1,23 @@
 import React from "react";
+import Products from "../home/Products";
 import "../style.css";
 
-export default () => {
+import { Consumer } from "../../../context";
+
+const Women = props => {
   return (
-    <div className="container">
-      <h1 style={{ marginTop: "129px" }}>Women Page</h1>
-    </div>
+    <Consumer>
+      {value => {
+        return (
+          <div className="container">
+            <div className="container--men">
+              <Products category="Women" />
+            </div>
+          </div>
+        );
+      }}
+    </Consumer>
   );
 };
+
+export default Women;

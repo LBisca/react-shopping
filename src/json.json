@@ -1,11 +1,22 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Grey T-Shirt",
     "type": "t-shirt",
     "url": "grey-t-shirt.png",
     "price": 25.31,
+    "category": "Men",
     "promotion": true
+  },
+
+  {
+    "id": 1,
+    "name": "Dress",
+    "type": "dress",
+    "url": "dress.png",
+    "price": 37.99,
+    "category": "Women",
+    "promotion": false
   },
   {
     "id": 2,
@@ -13,38 +24,16 @@
     "type": "jacket",
     "url": "leather-jacket.png",
     "price": 299.99,
+    "category": "Men",
     "promotion": false
   },
   {
     "id": 3,
-    "name": "blue t-shirt",
-    "type": "t-shirt",
-    "url": "clothes.png",
-    "price": 19.99,
-    "promotion": false
-  },
-  {
-    "id": 4,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
-    "promotion": false
-  },
-  {
-    "id": 5,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
-    "promotion": false
-  },
-  {
-    "id": 6,
-    "name": "dark jeans",
-    "type": "pants",
-    "url": "clothes.png",
-    "price": 116.72,
+    "name": "Simple Scarf",
+    "type": "scarf",
+    "url": "scarf.png",
+    "price": 27.99,
+    "category": "Diverse",
     "promotion": false
   }
 ]

@@ -34,11 +34,11 @@ class Item extends Component {
             <div className="item">
               <div className="item--container">
                 <Description />
-
-                <Product
-                  key={value.products[id].id}
-                  item={value.products[id]}
-                />
+                {value.products.map((item, index) => {
+                  if (item.id == id) {
+                    return <Product key={index} item={item} />;
+                  }
+                })}
               </div>
               <Link
                 to={"/cart"}

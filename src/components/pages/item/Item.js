@@ -34,6 +34,7 @@ class Item extends Component {
             <div className="item">
               <div className="item--container">
                 <Description />
+
                 <Product
                   key={value.products[id].id}
                   item={value.products[id]}

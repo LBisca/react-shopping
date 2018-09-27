@@ -15,7 +15,7 @@
     grid-template-columns: [line1]auto;
     margin-left: auto;
     margin-right: auto;
-    min-height: 100vh;
+    padding-bottom: calc(100vh - 300px);
 
     max-width: 980px;
     flex-wrap: wrap;

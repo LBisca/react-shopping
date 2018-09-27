@@ -15,32 +15,34 @@
   .product {
     margin-right: auto;
     margin-left: auto;
-    width: 325px;
+    min-width: 325px;
   }
 
   &--container {
     display: flex;
     flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
-
     grid-column: content;
-    margin-top: 130px;
+    margin-top: 225px;
   }
 }
 
 .button {
   display: block;
   margin: 10px;
-
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  max-height: 60px;
   width: 150px;
   padding: 20px;
-  color: white;
+  color: #fff;
   background-color: #f54d56;
   cursor: pointer;
+  margin-bottom: calc(100vh - 500px);
 
   @media only screen and (min-width: 720px) {
     margin-top: -65px;

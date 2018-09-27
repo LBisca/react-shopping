@@ -39,18 +39,18 @@ class Item extends Component {
                     return <Product key={index} item={item} />;
                   }
                 })}
+                <Link
+                  to={"/cart"}
+                  className="button"
+                  onClick={this.onUpdateClick.bind(
+                    this,
+                    value.products[id],
+                    dispatch
+                  )}
+                >
+                  Add to Cart
+                </Link>
               </div>
-              <Link
-                to={"/cart"}
-                className="button"
-                onClick={this.onUpdateClick.bind(
-                  this,
-                  value.products[id],
-                  dispatch
-                )}
-              >
-                Add to Cart
-              </Link>
             </div>
           );
         }}

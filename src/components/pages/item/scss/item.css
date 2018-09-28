@@ -18,7 +18,12 @@
 .item .product {
   margin-right: auto;
   margin-left: auto;
-  min-width: 325px;
+}
+
+@media only screen and (min-width: 720px) {
+  .item .product {
+    min-width: 325px;
+  }
 }
 
 .item--container {

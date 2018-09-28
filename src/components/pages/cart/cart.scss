@@ -1,9 +1,13 @@
 .container {
   margin-top: 129px;
   min-height: 100vh;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .total {
+  margin-top: 80px;
   font-size: 30px;
   padding: 55px;
   font-size: 20px;
@@ -11,10 +15,6 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-
-  @media only screen and (min-width: 720px) {
-    margin-left: 27px;
-  }
 }
 
 .cart {
@@ -67,4 +67,18 @@
       }
     }
   }
+}
+
+.button-submit {
+  display: block;
+  background-color: #f54d56;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 20px;
+  max-width: 200px;
+  text-align: center;
+
+  padding: 20px;
+  cursor: pointer;
 }

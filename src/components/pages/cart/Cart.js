@@ -39,12 +39,13 @@ class Cart extends Component {
 
           return (
             <div className="container">
-              <div className="total">{`Total: R$ ${value.shoppingList
-                .reduce((acc, next) => acc + next.price, 0)
-                .toFixed(2)}`}</div>
               <div className="cart">
                 <div className="cart--contents">{products}</div>
               </div>
+              <div className="total">{`Total: R$ ${value.shoppingList
+                .reduce((acc, next) => acc + next.price, 0)
+                .toFixed(2)}`}</div>
+              <div className="button-submit">BUY</div>
             </div>
           );
         }}
